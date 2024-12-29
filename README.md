@@ -1,4 +1,10 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+# EXP-2BOOLEAN_FUNCTION_MINIMIZATION
+
+**NAME:LOKESH.M**
+
+**REG NO:24009743**
+
+
 
 **AIM:**
 
@@ -16,7 +22,8 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
-**Logic Diagram**
+Logic function is implemented using Verilog, a hardware description language used model electronic systems. Verilog enables the design and simulation of digital circu efficiently. Quartus software is utilized to compile, synthesize, and verify the logic function through simulation. This process ensures the functionality aligns with the expected behavior of the logic design
+
 
 **Procedure**
 
@@ -32,21 +39,58 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+```
+module DE2(A, B, C, D, W, X, Y, Z, F1, F2);
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+input A, B, C, D, W, X, Y, Z;
 
-Developed by: RegisterNumber:*/
+wire x1, x2, x3, x4, x5, x6, x7, x8, x9, x10;
+
+output F1, F2;
+
+assign x1=(~A)&(~B)&(~C)&(~D);
+
+assign x2=(A)&(~C)&(~D);
+
+assign x3=(~B)&(C)&(~D);
+
+assign x4=(~A)&(B)&(C)&(D);
+
+assign x5=(B)&(~C)&(D);
+
+assign x6=(X)&(~Y)&(Z);
+
+assign x7=(~X)&(~Y)&(Z);
+
+assign x8=(~W)&(X)&(Y);
+
+assign x9=(W)&(~X)&(Y);
+
+assign x10=(W)&(X)&(Y);
+
+assign F1=x1|x2|x3|x4|x5;
+
+assign F2=x6|x7|x8|x9|x10;
+
+endmodule
+```
+
+Developed by: RegisterNumber:24009743
 
 
-**RTL realization**
+**RTL realization** 
+
+![Screenshot 2024-11-22 142532](https://github.com/user-attachments/assets/a5537802-a126-4824-9c8f-c6c4e17dbcff)
+
 
 **Output:**
+![Screenshot 2024-11-22 144245](https://github.com/user-attachments/assets/790912fa-2475-446d-bb78-fde5c4a91808)
 
 **RTL**
 
-**Timing Diagram**
+*
 
 **Result:**
 
-Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming Successfully.
 
