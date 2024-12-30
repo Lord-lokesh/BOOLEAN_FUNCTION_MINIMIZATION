@@ -86,9 +86,9 @@ Developed by: RegisterNumber:24009743
 **Output:**
 ![Screenshot 2024-11-22 144245](https://github.com/user-attachments/assets/790912fa-2475-446d-bb78-fde5c4a91808)
 
-**RTL**
 
-*
+
+
 
 **Result:**
 
